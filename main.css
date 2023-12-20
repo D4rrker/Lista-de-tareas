@@ -184,7 +184,7 @@
   align-items: center;
   grid-template-columns: 80px 1fr 80px;
   list-style: none;
-  min-width: 300px;
+  width: 600px;
   max-width: 800px;
   height: auto;
   padding: 10px 20px 10px 0;
@@ -193,11 +193,11 @@
 }
 
 .container li p {
-  display: flex;
+  display: inline-block;
   justify-self: center;
   text-align: center;
-  text-wrap: balance;
-  width: 300px;
+  text-wrap: pretty;
+  width: 400px;
   font-size: 20px;
   font-weight: 400;
   color: #eee;
@@ -237,6 +237,28 @@
 
 .btn_preview_colors:hover {
   transform: scale(1.3);
+}
+
+@media screen and (max-width: 650px){
+  .container li {
+    width: 450px;
+    max-width: 800px;
+  }
+
+  .container li p {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container li {
+    width: 340px;
+    max-width: 800px;
+  }
+
+  .container li p {
+    width: 180px;
+  }
 }
 
 
