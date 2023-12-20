@@ -184,8 +184,8 @@
   align-items: center;
   grid-template-columns: 80px 1fr 80px;
   list-style: none;
-  width: 600px;
-  min-width: 350px;
+  min-width: 300px;
+  max-width: 800px;
   height: auto;
   padding: 10px 20px 10px 0;
   border-radius: 10px;
@@ -193,12 +193,15 @@
 }
 
 .container li p {
-  display: inline-block;
+  display: flex;
   justify-self: center;
   text-align: center;
+  text-wrap: balance;
+  width: 300px;
   font-size: 20px;
   font-weight: 400;
   color: #eee;
+  overflow: hidden;
 }
 
 .btn_preview_colors {
